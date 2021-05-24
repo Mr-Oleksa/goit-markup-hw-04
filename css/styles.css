@@ -169,6 +169,8 @@ body {
   max-width: 1600px;
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 200px 0;
   text-align: center;
   background-color: var(--background-color);
