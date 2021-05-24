@@ -368,12 +368,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 50px;
 }
 .clients-list {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .clients-list li:not(:last-child) {
   margin-right: 30px;
 }
@@ -386,10 +388,17 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
+.clients-list-link-icon {
+  fill: #afb1b8;
+}
+.clients-list-link:hover .clients-list-link-icon,
+.clients-list-link:focus .clients-list-link-icon {
+  fill: var(--accent-color);
+}
+
 .clients-list-link:hover,
 .clients-list-link:focus {
   border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
 }
 
 /* ========== END CLIENTS ========== */
@@ -443,6 +452,7 @@ body {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -457,6 +467,11 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--grey-color);
+}
+.portfolio-img-item:hover,
+.portfolio-img-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* ========== END PORTFOLIO ========== */
 
@@ -503,15 +518,39 @@ body {
 .address-contact-link:focus {
   color: var(--address-link-color);
 }
-
-.social-list-cont {
-  width: 900px;
-}
-.social-lis {
+.cont-footer {
   display: flex;
+  align-items: baseline;
+}
+.footer-add {
+  margin-right: 50px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--white-color);
+}
+.footer-social:hover,
+.footer-social:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.social-list-cont {
   justify-content: space-between;
-  width: 200px;
-  margin: 0 auto;
 }
 
 .social-list-item-link {
@@ -522,7 +561,4 @@ body {
   color: #ffffff;
 }
 
-.social-list-item-link {
-  background-image: url('../images/icon-facebook.svg');
-}
 /* ========== END FOOTER ========== */
